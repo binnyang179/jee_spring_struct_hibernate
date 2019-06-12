@@ -70,6 +70,7 @@ public class ManageEmployee {
         try {
             tx = session.beginTransaction();
             List employees = session.createQuery("from Employee").list();
+            System.out.println("one is begin");
             for (Iterator iterator = employees.iterator(); iterator.hasNext();){
                 Employee employee = (Employee) iterator.next();
                 System.out.print("First Name: " + employee.getFirstName());

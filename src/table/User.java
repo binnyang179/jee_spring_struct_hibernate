@@ -1,11 +1,36 @@
 package table;
 
+import java.util.Date;
+
+
+import java.util.Date;
+
 public class User {
 
     private int id;
-    private String username;
-    private String password;
-    private String cellphone;
+
+    private String name;
+
+    private int age;
+
+    private String sex;
+
+    private Date birthday;
+
+    private String address;
+
+
+    public User() {
+    }
+
+    public User(int id, String name, int age, String sex, Date birthday, String address) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.birthday = birthday;
+        this.address = address;
+    }
 
     public int getId() {
         return id;
@@ -15,27 +40,52 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public int getAge() {
+        return age;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public String getCellphone() {
-        return cellphone;
+    public String getSex() {
+        return sex;
     }
 
-    public void setCellphone(String cellphone) {
-        this.cellphone = cellphone;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Student [id=" + id + ", name=" + name + ", age=" + age
+                + ", sex=" + sex + ", birthday=" + birthday + ", address="
+                + address + "]";
+    }
+
 }
+
