@@ -8,6 +8,9 @@
         <property name="sugar" value="多糖"/>
         <property name="size" value="超大杯"/>
     </bean>
+    <bean name="juickMaker" class="pojo.JuiceMaker">
+        <property name="source" ref="source" />
+    </bean>
 </beans>
 
 
